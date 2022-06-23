@@ -21,16 +21,12 @@ jobs:
 
       - name: Install NPM packages
         run: npm ci
-      
-      - name: Set RepositoryName to ENV
-        id: repository
-        run: |
-          echo "::set-output name=name::${GITHUB_REPOSITORY#${GITHUB_REPOSITORY_OWNER}/}"
+
       - name: Build Next.js app
         run: |
           npm run build
         env:
-          URL_PREFIX: ${{ steps.repository.outputs.name }}
+          URL_PREFIX:
 
       - name: Export Next.js app
         run: npm run export
