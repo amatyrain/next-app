@@ -1,0 +1,17 @@
+#textarea {
+    margin: 10px 10px 20px 0px;
+    float:left;
+}
+
+#result_area {
+    margin: 10px 10px 20px 0px;
+    float:left;
+}
+
+.clearboth {
+    clear:both;
+}
+
+.procedure {
+    margin-top: 10px;
+}

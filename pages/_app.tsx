@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/decorder.css'
 import Layout from '../components/Layout';
 
 function MyApp({ pageProps, Component }: { pageProps: any, Component: any }) {
